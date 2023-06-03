@@ -16,7 +16,7 @@ spec:
         app: web-app
     spec:
       containers:
-        - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:{{GIT_COMMIT}}
+        - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:d5b450cbd2f8e32c95a5f2d088cc0bcce842f655
           livenessProbe:
             failureThreshold: 1
             httpGet:
