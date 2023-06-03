@@ -19,7 +19,7 @@ spec:
           livenessProbe:
             failureThreshold: 1
             httpGet:
-              path: /Java_Webapp_Pipeline/rest/hello
+              path: /java_webapp_argocd/rest/hello
               port: 8080
               scheme: HTTP
             periodSeconds: 60
@@ -29,7 +29,7 @@ spec:
           readinessProbe:
             failureThreshold: 1
             httpGet:
-              path: /Java_Webapp_Pipeline/rest/hello
+              path: /java_webapp_argocd/rest/hello
               port: 8080
               scheme: HTTP
             periodSeconds: 60
