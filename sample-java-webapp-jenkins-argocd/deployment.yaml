@@ -5,7 +5,7 @@ metadata:
     app: web-app
   name: java-webapp
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: web-app
@@ -15,7 +15,7 @@ spec:
         app: web-app
     spec:
       containers:
-        - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:32b2f10739a3e98c5481439897931683dfb7d76d
+        - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:f836e83c07b5792e561a2aee682489753f46228f
           livenessProbe:
             failureThreshold: 1
             httpGet:
