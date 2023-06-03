@@ -39,7 +39,7 @@ spec:
           startupProbe:
             failureThreshold: 30
             httpGet:
-              path: /Java_Webapp_Pipeline/rest/hello
+              path: /java_webapp_argocd/rest/hello
               port: 8080
               scheme: HTTP
             periodSeconds: 10
