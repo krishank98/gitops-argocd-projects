@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webapp-ing-prod
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: sample-java-webapp-jenkins-argocd-prod.example.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: webapp-svc
+            port:
+              number: 8080
+        path: /
+        pathType: Prefix
