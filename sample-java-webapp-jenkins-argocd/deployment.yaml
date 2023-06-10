@@ -15,7 +15,7 @@ spec:
         app: web-app
     spec:
       containers:
-        - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:0aec12288c7d065520950e2a55c5b15cf71e3741
+        - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:22589123c9747a2aa7544bf208686159ba73c10c
           livenessProbe:
             failureThreshold: 1
             httpGet:
