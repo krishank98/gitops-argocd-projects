@@ -15,6 +15,10 @@ spec:
         app: web-app
     spec:
       serviceAccountName: example-sa
+      volumes:
+        - name: example-pvc
+          persistentVolumeClaim:
+            claimName: example-pvc
       containers:
         - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:3143c500447171e410ebf53abc3cf88e1c8f49e8
           env:
@@ -28,6 +32,9 @@ spec:
                 configMapKeyRef:
                   name: example-configmap
                   key: KEY2
+          volumeMounts:
+          - mountPath: "/opt"
+            name: example-pvc
           livenessProbe:
             failureThreshold: 1
             httpGet:
