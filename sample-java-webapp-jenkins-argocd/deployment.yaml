@@ -14,6 +14,7 @@ spec:
       labels:
         app: web-app
     spec:
+      serviceAccountName: example-sa
       containers:
         - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:3143c500447171e410ebf53abc3cf88e1c8f49e8
           livenessProbe:
