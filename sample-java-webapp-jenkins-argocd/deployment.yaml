@@ -33,7 +33,7 @@ spec:
                   name: example-configmap
                   key: KEY2
           volumeMounts:
-          - mountPath: "/opt"
+          - mountPath: "/tmp"
             name: example-pvc
           livenessProbe:
             failureThreshold: 1
