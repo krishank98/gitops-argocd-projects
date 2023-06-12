@@ -32,11 +32,6 @@ spec:
                 configMapKeyRef:
                   name: example-configmap
                   key: KEY2
-            - name: SECRET_ENV
-                valueFrom:
-                  secretKeyRef:
-                    name: secret-with-vault
-                    key: apikey
           volumeMounts:
           - mountPath: "/tmp"
             name: example-pvc
