@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: webapp-ing-feature
+  name: webapp-ing-feature-branch
 spec:
   ingressClassName: nginx
   rules:
