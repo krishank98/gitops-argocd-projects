@@ -20,7 +20,7 @@ spec:
           persistentVolumeClaim:
             claimName: example-pvc
       containers:
-        - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:5e2234e8dfc0efcfa965830e9e5132598e813de8
+        - image: harbor.example.com/mantislogic/sample-java-webapp-jenkins:7623a3cdc02f012cef97af8a00382ea3918d4634
           env:
             - name: KEY1
               valueFrom:
